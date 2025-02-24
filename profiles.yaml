@@ -1,0 +1,36 @@
+
+profiles:
+  - name: "shahad-profile"
+    display_name: "Shahad Profile"
+    description: "Profile with admin  access"
+    roles:
+      - name: "admin"
+        display_name: "Admin"
+        description: "Administrator role with full access"
+        bindings:
+          - group: "admin-group"
+            user: "shahad@test.com"
+            permissions:
+              - "read"
+              - "write"
+              - "execute"
+
+  - name: "amjad-profile"
+    display_name: "Amjad Profile"
+    description: "Profile for Amjad with read-only access"
+    roles:
+      - name: "reader"
+        display_name: "Reader"
+        description: "Reader role with restricted access"
+        bindings:
+          - group: "reader-group"
+            user: "amjad@test.com"
+            permissions:
+              - "read"
+
+~
+~
+~
+~
+~
+~
